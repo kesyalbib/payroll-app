@@ -1,3 +1,5 @@
+![Teks Alternatif](frontend/assets/ss.png)
+
 # Stellar Payroll DApp
 
 **Stellar Payroll DApp** - Blockchain-Based Automated Payroll & Micro-Invoicing System

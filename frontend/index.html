@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stellar Payroll DApp</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/13.0.0/stellar-sdk.min.js"></script>
+  <script src="https://unpkg.com/@stellar/freighter-api/dist/index.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Stellar Payroll DApp</h1>
+
+    <!-- ADD EMPLOYEE -->
+    <div class="card">
+      <h2>Add Employee</h2>
+
+      <input type="text" id="name" placeholder="Employee Name"/>
+      <input type="text" id="wallet" placeholder="Wallet Address"/>
+      <input type="number" id="rate" placeholder="Hourly Rate"/>
+
+      <button onclick="addEmployee()">
+        Add Employee
+      </button>
+    </div>
+
+    <!-- RECORD WORK -->
+    <div class="card">
+      <h2>Record Work</h2>
+
+      <input type="number" id="employeeId" placeholder="Employee ID"/>
+      <input type="number" id="hours" placeholder="Hours Worked"/>
+
+      <button onclick="recordWork()">
+        Record Hours
+      </button>
+    </div>
+
+    <!-- WITHDRAW -->
+    <div class="card">
+      <h2>Withdraw Salary</h2>
+
+      <input type="number" id="withdrawId" placeholder="Employee ID"/>
+
+      <button onclick="withdrawSalary()">
+        Withdraw
+      </button>
+    </div>
+
+    <!-- GET EMPLOYEES -->
+    <div class="card">
+
+      <h2>Employees</h2>
+
+      <button onclick="getEmployees()">
+        Refresh Employees
+      </button>
+
+      <div id="employeeList"></div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

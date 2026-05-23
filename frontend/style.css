@@ -1,0 +1,63 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+  padding:40px;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:30px;
+  color:#38bdf8;
+}
+
+.card{
+  background:#1e293b;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:12px;
+}
+
+.card h2{
+  margin-bottom:15px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin-bottom:10px;
+  border:none;
+  border-radius:8px;
+}
+
+button{
+  background:#38bdf8;
+  color:black;
+  border:none;
+  padding:12px 20px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+button:hover{
+  background:#0ea5e9;
+}
+
+.employee{
+  background:#334155;
+  padding:15px;
+  border-radius:10px;
+  margin-top:10px;
+}
